@@ -19,8 +19,7 @@ nextButton.addEventListener("click", function displayHandler() {
 
         cashReceivedLabel.style.display = "flex"
         checkButton.style.display = "block";
-
-
+       
 
     } else {
         showError("Enter a valid bill amount that is more than 0");
@@ -36,7 +35,6 @@ checkButton.addEventListener("click", function checkHandler() {
     errorMessage.style.display = "none";
 
     if (cashValue > billValue) {
-
         let cashToReturn = cashValue - billValue;
         calculateNotesTOReturn(cashToReturn);
 
